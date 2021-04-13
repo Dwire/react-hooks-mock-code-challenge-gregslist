@@ -43,7 +43,7 @@ const filteredGoods = () => {
 
   return (
     <div className="app">
-      <Header handleSearchTerm={handleSearchTerm} searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <Header handleSearchTerm={handleSearchTerm} />
       <ListingsContainer goodsList={filteredGoods()} handleDelete={handleDelete} />
     </div>
   );
