@@ -1,11 +1,20 @@
 import React from "react";
-// import ListingCard from "./ListingCard";
+import ListingCard from "./ListingCard";
 
-function ListingsContainer() {
+function ListingsContainer({goodsList, handleDelete}) {
+  // goodsList = [{}, {}, {}]
+  
+  const cardList = goodsList.map(good => <ListingCard key={good.id} goodId={good.id} image={good.image} location={good.location} description={good.description} handleDelete={handleDelete}/> )
+  // const cardList = goodsList.map(good => <ListingCard key={good.id} {...good} /> )
+  // const cardList = goodsList.map(good => <ListingCard key={good.id} good={good} /> )
+  // cardList = [<ListingCard /> , <ListingCard /> , <ListingCard /> ]
+
+
+
   return (
     <main>
       <ul className="cards">
-        {/* use the ListingCard component to display listings */}
+        {cardList}
       </ul>
     </main>
   );

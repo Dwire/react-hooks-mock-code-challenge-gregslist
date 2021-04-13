@@ -1,5 +1,10 @@
 # React Mock Code Challenge: gregslist
 
+
+Bonus Feature:
+- Toggle
+
+
 ## Demo
 
 Use this gif as an example of how the app should work.
