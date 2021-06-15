@@ -1,5 +1,16 @@
 # React Mock Code Challenge: gregslist
 
+
+- onClick effecting wrong button?
+- re-redering array after deleting an object
+
+
+- mutating state
+- filtering in general
+- button vs dynamic search
+
+
+
 ## Demo
 
 Use this gif as an example of how the app should work.
